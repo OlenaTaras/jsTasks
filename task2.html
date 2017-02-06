@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>task 2</title>
+</head>
+<body>
+
+<form>
+	 <input type="number" name="kredit" id="kr" placeholder="Введіть суму кредиту">
+	<input type="number" name="month" id="y" placeholder="На скільки років ">
+	
+
+
+
+
+<script type="text/javascript">
+	var rate=10;
+	var a = document.getElementById('kr').value;
+	var b = document.getElementById('y').value;
+
+
+	function kreditFinal(a,b){
+		return((a*rate*(b+1))/(24*100))
+		};
+
+	function text(){
+		alert("Ви переплачуєте " + kreditFinal(a,b) + " гривень");
+	};
+
+//var button= document.getElementById('res');
+//button.onclick='Hi';
+//var text = "Ви переплачуєте " + kreditFinal(a,b) + " гривень";
+//alert(text)
+
+//function(){ kreditFinal(a,b); }; 
+
+</script>
+
+	<button type="button" id="res" onclick="text()">
+		Ви переплачуєте 
+	</button>
+</form>
+
+
+</body>
+</html>
