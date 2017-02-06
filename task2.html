@@ -37,5 +37,33 @@
 </form>
 
 
+
+<br>
+
+<form>
+	 <input type="number" name="first" id="first" placeholder="Введіть перше число">
+	<input type="number" name="month" id="second" placeholder="Введіть друге число">
+
+
+
+
+
+<script type="text/javascript">
+	var x = document.getElementById('first').value;
+	var y = document.getElementById('second').value;
+	function summa(x,y){
+		rezult = x-y>0 ? x-y : y-x,
+		alert(rezult)
+	};
+	function print(){
+		alert(summa(x,y))
+	};
+</script>
+
+	<button type="button" id="rezult" onclick="summa(x,y)">
+		Від більшого відняти менше
+	</button>
+</form>
+
 </body>
 </html>
