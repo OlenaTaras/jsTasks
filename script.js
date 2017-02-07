@@ -2,16 +2,16 @@
 //Завдання 2
 
 	var rate=10;
-	var a = document.getElementById('kr').value;
-	var b = document.getElementById('y').value;
+	var a = document.getElementById('kr').value; //bad name for id
+	var b = document.getElementById('y').value; //bad name for id
 
 
-	function kreditFinal(a,b){
+	function kreditFinal(a,b){            //Where is third parameter?
 		return((a*rate*(b+1))/(24*100))
 		};
 
-	function text(){
-		alert("Ви переплачуєте " + kreditFinal(a,b) + " гривень");
+	function text(){ //no need for this function
+		alert("Ви переплачуєте " + kreditFinal(a,b) + " гривень"); //alert is not very good for send msg to user
 	};
 
 
@@ -40,7 +40,7 @@ function summanext(p,q) {
   };
 
   
- function condition(f,s) {
+ function condition(f,s) { // where is this - Во всех остальных случаях возвращать NaN.
 if(typeof f!=='number'){ 
     summanext()
    } 
