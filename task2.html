@@ -14,22 +14,6 @@
 
 
 
-<script type="text/javascript">
-	var rate=10;
-	var a = document.getElementById('kr').value;
-	var b = document.getElementById('y').value;
-
-
-	function kreditFinal(a,b){
-		return((a*rate*(b+1))/(24*100))
-		};
-
-	function text(){
-		alert("Ви переплачуєте " + kreditFinal(a,b) + " гривень");
-	};
-
-
-</script>
 
 	<button type="button" id="res" onclick="text()">
 		Ви переплачуєте 
@@ -48,22 +32,21 @@
 
 
 
-<script type="text/javascript">
-	var x = document.getElementById('first').value;
-	var y = document.getElementById('second').value;
-	function summa(x,y){
-		rezult = x-y>0 ? x-y : y-x,
-		alert(rezult)
-	};
-	function print(){
-		alert(summa(x,y))
-	};
-</script>
-
 	<button type="button" id="rezult" onclick="summa(x,y)">
 		Від більшого відняти менше
 	</button>
 </form>
 
+<br>
+
+<form>
+	 <input type="text" name="" id="numberOne" placeholder="Введіть перше число">
+	<input type="text" name="" id="numberTwo" placeholder="Введіть друге число">
+
+	<button type="button" id="task1" onclick="condition(f,s)">
+		Сума двох чисел
+	</button>
+</form>
+<script src="script.js"> </script>
 </body>
 </html>
