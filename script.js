@@ -20,32 +20,33 @@ if(typeof f!=='number'&&typeof s!=='number'){
 
 
 //Завдання 2
-
-
 	var a = document.getElementById('kredit').value;
 	var b = document.getElementById('year').value;
 	var rate = document.getElementById('rates').value;
 
-	function kreditFinal(a,b,rate){
+
+	function kreditFinal(a,b,rate) {
 		return((a*rate*(b+1))/(24*100))
 		};
 
-	function text(){
-		confirm("Ви переплачуєте " + kreditFinal(a,b,rate) + " гривень")
+	function text() {
+		confirm("Ви переплачуєте " + kreditFinal(a,b,rate) + " гривень");
 	};
-
 
 //Завдання 3
 
 	var x = document.getElementById('first').value;
 	var y = document.getElementById('second').value;
 
-	var rezult;
+	
 	function summatask2(x,y){
-		rezult = x-y>0 ? x-y : y-x,
-		alert("Різниця дорівнює " + rezult)
+		var rezultat
+	if(x-y>0){
+		 rezultat= x-y} else
+		{rezultat= y-x}
+		alert("Різниця дорівнює " + rezultat)
+
 	};
 	function print(){
-		alert(summa(x,y))
+		alert(summa(x,y)); // you can add some message to user
 	};
-
