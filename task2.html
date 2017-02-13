@@ -2,38 +2,34 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>task 2</title>
-	<!--maybe change name of title, because of tasks-->
+	<title>All tasks</title>
 </head>
 <body>
 <!--please split with number of task-->
 <form>
-	 <input type="number" name="kredit" id="kr" placeholder="Введіть суму кредиту">
-	<input type="number" name="month" id="y" placeholder="На скільки років ">
-	
-
-
-
-
+	 <input type="number" name="kredits" id="kredit" placeholder="Введіть суму кредиту">
+	<input type="number" name="years" id="year" placeholder="На скільки років ">
+	<input type="number" name="rate" id="rates" placeholder="Віедіть процентну ставку, % ">
+  
+<!--   please delete redundant space -->
 
 	<button type="button" id="res" onclick="text()">
 		Ви переплачуєте 
 	</button>
 </form>
 
-
+<!--   please delete redundant space -->
 
 <br>
 <!--please split with number of task-->
 <form>
 	 <input type="number" name="first" id="first" placeholder="Введіть перше число">
-	<input type="number" name="month" id="second" placeholder="Введіть друге число">
-     <!--why in the input name="month"-->
+	<input type="number" name="second" id="second" placeholder="Введіть друге число">
+
+<!--   please delete redundant space -->
 
 
-
-
-	<button type="button" id="rezult" onclick="summa(x,y)">
+	<button type="button" id="rezult" onclick="summatask2(x,y)">
 		Від більшого відняти менше
 	</button>
 </form>
@@ -41,15 +37,14 @@
 <br>
 <!--please split with number of task-->
 <form>
-	 <input type="text" name="" id="numberOne" placeholder="Введіть перше число">
-	<input type="text" name="" id="numberTwo" placeholder="Введіть друге число">
+	 <input type="text" name="first" id="numberOne" placeholder="Введіть перше число">
+	<input type="text" name="second" id="numberTwo" placeholder="Введіть друге число">
 
-	<!--why name is empty-->
+	<button type="button" id="task1" onclick="summatask1(f,s)">
 
-	<button type="button" id="task1" onclick="condition(f,s)">
 		Сума двох чисел
 	</button>
-</form>
+</form> 
 <script src="script.js"> </script>
 </body>
 </html>

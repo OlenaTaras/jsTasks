@@ -1,30 +1,29 @@
 
 //Завдання 2
+	var a = document.getElementById('kredit').value;
+	var b = document.getElementById('year').value;
+	var rate = document.getElementById('rates').value;
 
-	var rate=10;
-	var a = document.getElementById('kr').value; //bad name for id
-	var b = document.getElementById('y').value; //bad name for id
 
-
-	function kreditFinal(a,b){            //Where is third parameter?
+	function kreditFinal(a,b,rate) {
 		return((a*rate*(b+1))/(24*100))
 		};
 
-	function text(){ //no need for this function
-		alert("Ви переплачуєте " + kreditFinal(a,b) + " гривень"); //alert is not very good for send msg to user
+	function text() {
+		confirm("Ви переплачуєте " + kreditFinal(a,b,rate) + " гривень");
 	};
-
 
 //Завдання 3
 
 	var x = document.getElementById('first').value;
 	var y = document.getElementById('second').value;
-	function summa(x,y){
-		rezult = x-y>0 ? x-y : y-x,
+
+	function summatask2(x,y){
+		rezult = x-y>0 ? x-y : y-x, // if you use rezult without var, you assign it to global scope, this is bad practice
 		alert(rezult)
 	};
 	function print(){
-		alert(summa(x,y))
+		alert(summa(x,y)); // you can add some message to user
 	};
 
 //Завдання 1
@@ -32,23 +31,13 @@
 	var f = +document.getElementById('numberOne').value;
 	var s = +document.getElementById('numberTwo').value;
 
-
-var c;
-function summanext(p,q) {
-  c=+p + +q
- alert(c)
-  };
-
-  
- function condition(f,s) { // where is this - Во всех остальных случаях возвращать NaN.
-if(typeof f!=='number'){ 
-    summanext()
-   } 
-else if(typeof s!=='number'){
-     summanext()
-}
-
-   else {
- summanext(f,s)
-}
+function summatask1(f,s) { // where is this - Во всех остальных случаях возвращать NaN.
+  if(typeof f!=='number'&&typeof s!=='number'){
+	  var c = Math.sqrt(-1);
+	  alert(c)
+  }else{
+	  var rezult= +f + +s
+	  alert(rezult)
+  }
 };
+
