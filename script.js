@@ -1,17 +1,17 @@
 
 //Завдання 2
 
-	var rate=10;
-	var a = document.getElementById('kr').value;
-	var b = document.getElementById('y').value;
 
+	var a = document.getElementById('kredit').value;
+	var b = document.getElementById('year').value;
+	var rate = document.getElementById('rates').value;
 
-	function kreditFinal(a,b){
+	function kreditFinal(a,b,rate){
 		return((a*rate*(b+1))/(24*100))
 		};
 
 	function text(){
-		alert("Ви переплачуєте " + kreditFinal(a,b) + " гривень");
+		var z=confirm("Ви переплачуєте " + kreditFinal(a,b,rate) + " гривень")
 	};
 
 
@@ -19,7 +19,8 @@
 
 	var x = document.getElementById('first').value;
 	var y = document.getElementById('second').value;
-	function summa(x,y){
+
+	function summatask2(x,y){
 		rezult = x-y>0 ? x-y : y-x,
 		alert(rezult)
 	};
@@ -33,22 +34,14 @@
 	var s = +document.getElementById('numberTwo').value;
 
 
-var c;
-function summanext(p,q) {
-  c=+p + +q
- alert(c)
-  };
 
-  
- function condition(f,s) {
-if(typeof f!=='number'){ 
-    summanext()
-   } 
-else if(typeof s!=='number'){
-     summanext()
-}
 
-   else {
- summanext(f,s)
-}
+function summatask1(f,s){
+if(typeof f!=='number'&&typeof s!=='number'){
+	var c=Math.sqrt(-1)
+	alert(c)
+}else {
+	var rezult= +f + +s
+	alert(rezult)}
 };
+
