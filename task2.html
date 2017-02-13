@@ -5,7 +5,7 @@
 	<title>All tasks</title>
 </head>
 <body>
-
+<!--please split with number of task-->
 <form>
 	 <input type="text" name="first" id="numberOne" placeholder="Введіть перше число">
 	<input type="text" name="second" id="numberTwo" placeholder="Введіть друге число">
@@ -21,11 +21,7 @@
 		Ви переплачуєте 
 	</button>
 </form>
-
-
-
 <br>
-
 <form>
 	 <input type="number" name="first" id="first" placeholder="Введіть перше число">
 	<input type="number" name="second" id="second" placeholder="Введіть друге число">
@@ -34,7 +30,15 @@
 	</button>
 </form>
 <br>
+<form>
+	 <input type="text" name="first" id="numberOne" placeholder="Введіть перше число">
+	<input type="text" name="second" id="numberTwo" placeholder="Введіть друге число">
 
+	<button type="button" id="task1" onclick="summatask1(f,s)">
+
+		Сума двох чисел
+	</button>
+</form> 
 <script src="script.js"> </script>
 </body>
 </html>
