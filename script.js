@@ -11,7 +11,7 @@
 		};
 
 	function text(){
-		var z=confirm("Ви переплачуєте " + kreditFinal(a,b,rate) + " гривень")
+		confirm("Ви переплачуєте " + kreditFinal(a,b,rate) + " гривень")
 	};
 
 
