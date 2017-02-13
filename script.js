@@ -1,4 +1,24 @@
 
+
+//Завдання 1
+
+	var f = +document.getElementById('numberOne').value;
+	var s = +document.getElementById('numberTwo').value;
+
+
+
+
+function summatask1(f,s){
+if(typeof f!=='number'&&typeof s!=='number'){
+	var c=Math.sqrt(-1)
+	alert(c)
+}else {
+	var rezult= +f + +s
+	alert(rezult)}
+};
+
+
+
 //Завдання 2
 
 
@@ -20,28 +40,12 @@
 	var x = document.getElementById('first').value;
 	var y = document.getElementById('second').value;
 
+	var rezult;
 	function summatask2(x,y){
 		rezult = x-y>0 ? x-y : y-x,
-		alert(rezult)
+		alert("Різниця дорівнює " + rezult)
 	};
 	function print(){
 		alert(summa(x,y))
 	};
-
-//Завдання 1
-
-	var f = +document.getElementById('numberOne').value;
-	var s = +document.getElementById('numberTwo').value;
-
-
-
-
-function summatask1(f,s){
-if(typeof f!=='number'&&typeof s!=='number'){
-	var c=Math.sqrt(-1)
-	alert(c)
-}else {
-	var rezult= +f + +s
-	alert(rezult)}
-};
 
